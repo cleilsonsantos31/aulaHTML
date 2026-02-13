@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabela HTML</title>
+    <style>
+      table,
+      tr,
+      th,
+      td {
+        border: 1px solid;
+        border-collapse: collapse;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="4">Lista de Usuários</th>
+        </tr>
+        <tr>
+          <!-- 1ª linha -->
+          <th></th>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Telefone</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- 2ª linha -->
+        <tr>
+          <td>1</td>
+          <td>Cleilson Santos</td>
+          <td>(85) 99999.999</td>
+          <td>Ativo</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Teste do teste</td>
+          <td>(85) 99985855</td>
+          <td>Inativo</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Emilio</td>
+          <td>(85) 3457.2000</td>
+          <td>
+            <select name="nivel" id="nivel" style="font-size: 30px">
+              <option value="" disabled selected>Selecione seu nível</option>
+              <option value="trainee">Ativo</option>
+              <option value="junior">Inativo</option>
+              <option value="pleno">Idefinido</option>
+            </select>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">Rodapé</td>
+        </tr>
+      </tfoot>
+    </table>
+    <br />
+    <hr />
+    <br /><br /><br />
+    <table>
+      <thead>
+        <tr>
+          <!-- 1ª linha -->
+          <th>Frutas</th>
+          <th>Verduras</th>
+          <th>Grâos</th>
+          <th>...</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- 2ª linha -->
+        <tr>
+          <td>Maçã</td>
+          <td>Alface</td>
+          <td>Arroz</td>
+          <td rowspan="4">3 linhas</td>
+        </tr>
+        <tr>
+          <td>laranja</td>
+          <td>Beterraba</td>
+          <td>Trigo</td>
+        </tr>
+        <tr>
+          <td colspan="3">3 linhas</td>
+        </tr>
+      </tbody>
+      <tfoot></tfoot>
+    </table>
+  </body>
+</html>
